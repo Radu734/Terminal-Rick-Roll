@@ -34,7 +34,7 @@ This project is a lightweight prank kit designed to display ASCII-art "gif's" on
 
 If the prank has been "installed" via `Init.bat` or `rickroll_hidden.vbs`, closing the pop-up ASCII windows won't stop them from coming back.
 
-1. Right-click **`StopRick.bat`** and **Run as Administrator**.
+1. Double-click **`StopRick.bat`** and click **Accept** / **Yes** when prompted to.
 2. This script executes:
    - `schtasks /delete /tn "LOL" /f` (Removes the startup trigger).
    - `taskkill /f /im wscript.exe` (Kills the hidden background tasks).
