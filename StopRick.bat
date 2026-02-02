@@ -10,9 +10,13 @@ if %errorlevel% neq 0 (
 echo Running with administrator privileges.
 
 :: ---- ADMIN CODE BELOW ----
-echo Removing RickTasks In:
 
-timeout /t 5
+echo If the background startup task is removed, you will get errors:
+echo ```````````````````````````````````````````````````````````````
+
+schtasks /delete /tn "LOL" /f
+schtasks /query /tn "LOL"
+
+pause
 
 taskkill /f /im cmd.exe
-schtasks /delete /tn "LOL" /f
